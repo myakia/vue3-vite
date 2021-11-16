@@ -1,0 +1,162 @@
+// 小按钮
+.btn-s {
+  color: #fff;
+  width: 120px;
+  height: 50px;
+  border-radius: 24px;
+  font-size: 24px;
+  margin-left: 30px;
+
+}
+
+//下拉框
+.van-dropdown-menu {
+  margin-left: 33px;
+  min-width: 84px;
+  .van-dropdown-menu__bar {
+    box-shadow: none;
+    height: 88px;
+  }
+  .van-dropdown-menu__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .van-dropdown-menu__title::after {
+    border-left: 1Px solid #dcdee0;
+    border-bottom: 1Px solid #dcdee0;
+    height: 10px;
+    width: 10px;
+    transform: translate(1Px, -1Px) rotate(-45deg);
+    -webkit-transform: translate(1Px, -1Px) rotate(-45deg);
+    border-right: 1Px solid transparent;
+    border-top: 1Px solid transparent;
+    display: inline-block;
+    -moz-transform: translate(1Px, -1Px) rotate(-45deg);
+    -ms-transform: translate(1Px, -1Px) rotate(-45deg);
+    -o-transform: translate(1Px, -1Px) rotate(-45deg);
+    margin: -10px -6px 0 0;
+  }
+  .van-dropdown-menu__title--active::after {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin: -6px -10px 0 0;
+  }
+  .van-dropdown-item__option::after {
+    // border-bottom: none;
+  }
+  .van-dropdown-item {
+    // top: 88px !important;
+    border-top: 1Px solid #f3f5f7;
+  }
+}
+
+//图标颜色
+.van-icon{
+  color: @fontColorGray;
+}
+
+//加载更多
+.van-loading__text{
+  color: #CFCFCFFF;
+  font-size: 26px;
+}
+
+//弹出层
+.van-picker{
+  border-radius: 24px 24px 0 0;
+  .van-picker__toolbar{
+    height: 112px;
+    border-bottom: 1Px solid #f3f5f7;
+  }
+  .van-picker__title{
+    font-size: 32px;
+    line-height: 112px;
+    color: @fontColorBlack;
+  }
+  .van-picker__cancel,
+  .van-picker__confirm,
+  .van-ellipsis{
+    font-size: 32px;
+  }
+  .van-picker__confirm{
+    color: @themeColor;
+  }
+  .van-picker__cancel{
+    color: @fontColorGray;
+  }
+}
+
+//默认按钮
+.btn-default{
+  padding:0 35px;
+  height: 56px;
+  line-height: 56px;
+  border: 2px solid #EEEEEE;
+  border-radius: 30px;
+  display: inline-block;
+  color:#666;
+}
+
+//提交按钮
+.post-btn {
+  width: 686px;
+  height: 88px;
+  background: linear-gradient(135deg, #7AA6F6 0%, #4B73EA 100%);
+  border-radius: 44px;
+  margin: 0 auto;
+  margin-top:40px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 88px;
+  text-align: center;
+}
+
+//购物车-徽标
+.shopCar-box{
+  position: relative;
+  .icon-badge{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+  }
+}
+
+//计步器
+.van-stepper{
+  border-radius: 30px;
+  overflow: hidden;
+  background: #F8F8F8FF;
+  .van-stepper__minus,.van-stepper__plus,.van-stepper__input{
+    background: #F8F8F8FF;
+    height: 60px;
+  }
+  .van-stepper__input{
+    margin:0;
+    width: 60px;
+    line-height: 60px;
+  }
+  .van-stepper__minus,
+  .van-stepper__plus{
+    width: 56px;
+  }
+  .van-stepper__minus::before,
+  .van-stepper__plus::before{
+    width: 18px;
+    height: 1Px;
+  }
+  .van-stepper__plus::after{
+    width: 1Px;
+    height: 18px;
+    left: 13px;
+  }
+  .van-stepper__minus::before{
+    left: auto;
+    right: 4px;
+    transform: translateY(-50%);
+  }
+  .van-stepper__plus::before{
+    left: 4px;
+    transform: translateY(-50%);
+  }
+}
+

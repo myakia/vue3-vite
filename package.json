@@ -1,0 +1,33 @@
+{
+  "name": "vue3-vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --mode dev",
+    "build:dev": "vite build --mode dev",
+    "build:sit": "vite build --mode sit",
+    "build:uat": "vite build --mode uat",
+    "build:prod": "vite build --mode prod",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "axios": "^0.21.4",
+    "vant": "^3.2.8",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "autoprefixer": "9.5.1",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "postcss": "^8.3.6",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.8",
+    "postcss-pxtorem": "^5.1.1",
+    "postcss-url": "^7.2.1",
+    "vconsole": "^3.9.1",
+    "vite": "^2.6.4",
+    "vite-plugin-vconsole": "^1.1.0"
+  }
+}
