@@ -4,6 +4,7 @@
     <div><van-button size="small" @click="getIndex">请求接口</van-button></div>
     <input type="text" v-model="name" class="input" />
     <div>{{ name }}</div>
+    <div>{{ resData }}</div>
     <!-- <div>{{ num }}</div> -->
   </div>
 </template>
@@ -17,13 +18,18 @@ export default {
       name: 'sam',
       age: 32
     })
+    let resData = reactive({})
     const getIndex = async () => {
       let res = await indexAdvs()
-      console.log(res)
+      console.log(resData)
+      Object.assign(resData, res)
+      // resData = { ...res }
+      console.log(resData)
     }
     return {
       num,
       getIndex,
+      resData,
       ...toRefs(person)
     }
   }
@@ -32,6 +38,7 @@ export default {
 <style lang="less" scoped>
 .vant {
   color: @orangeColor;
+  font-size: 14px;
 }
 .input {
   color: @themeColor;
