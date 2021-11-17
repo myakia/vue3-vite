@@ -5,7 +5,7 @@
     <input type="text" v-model="name" class="input" />
     <div>{{ name }}</div>
     <div>{{ resData }}</div>
-    <!-- <div>{{ num }}</div> -->
+    <div>{{ num }}</div>
   </div>
 </template>
 <script>
